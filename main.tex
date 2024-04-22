@@ -1,0 +1,349 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+% \usepackage[]{fancyhdr}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+% \pagestyle{fancy}
+% \fancyfoot{}
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Hattie Stewart}}}} % First name
+	
+	\vspace{6pt}
+	
+	% {\Large Developer $\sim$ Engineer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	\icon{Globe}{11}{\href{https://hstewart93.github.io}{hattie-stewart}}\\ 
+    % \icon{Phone}{11}{07724 747 385}\\
+    \icon{MapMarker}{11}{Bristol, UK}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% \icon{Envelope}{11}{\href{mailto:email@example.com}{harriet.stt@gmail.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/hstewart93}{github.com/hstewart93}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/hattie-stewart-7400b5162/}{/in/hattie-stewart}}\\    
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    % \vspace{-40pt}
+    \cvsect{Summary}
+	\vspace{-6pt}
+ 
+    %Dummy text
+    I am a PhD candidate in ML for Astrophysics with a background in software engineering, and have submitted my thesis for defense. I am highly committed to software best practices. I am particularly interested in the use of unsupervised methods to extract information from large data sets without the need of contextual information; using the power of ML to let the data speak for itself. \\
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Proficient Skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Python, SQL
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Git, GitHub, TensorFlow, PyTorch, Keras, SciPy, NumPy, Pandas, Scikit-learn, Jupyter, Matplotlib, Django, CI, CD, TDD, venv, LaTeX, JIRA, Trello, Agile, Docker, REST API, OpenAPI
+    \end{minipage}
+    
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+% \vspace{-10 pt}
+\cvsect{Professional Experience}
+\begin{entrylist}
+    \entry
+		{2022}
+		{Industry Placement - SciML group}
+		{Rutherford Appleton Laboratory}
+  		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Investigating VAEs and AEs applied to scientific data sets for image segmentation.
+        \end{itemize}
+        \texttt{TensorFlow} \slashsep \texttt{Keras} \slashsep \texttt{PyTorch} \slashsep \texttt{Numpy} \slashsep \texttt{Pandas}} 
+    \entry
+        {2019 - 2022}
+		{Freelance Software Engineer}
+		{Uncommon Correlation}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Python and Django back-end development for data governance and secure data processing systems.
+        \end{itemize}}
+	\entry
+        {2018 - 2019}
+		{Software Engineer}
+		{Omni Digital}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Back-end development,  building robust systems in Python and Django. Experience creating and implementing an open API specification. OOP, using modern tools/technologies.
+            \item Front-end engineering and infrastructure experience.
+            \item Committed to best practices, including comprehensive unit and function testing, as well as smoke tests and peer review.
+            \item Experience in leading and working under Agile project management method.
+            \item Project lead on, and assisted in pitching for, Google funded project; involving assisting in project and team management, making technical decisions and client liaison.
+        \end{itemize} 
+        \texttt{Python} \slashsep \texttt{TDD} \slashsep \texttt{pytest} \slashsep \texttt{unittest} \slashsep \texttt{Travis CI} \slashsep \texttt{CD} \slashsep \texttt{Django} \slashsep \texttt{Wagtail} \slashsep \texttt{PostgreSQL} \slashsep \texttt{HTML} \slashsep \texttt{Django Templates} \slashsep \texttt{CSS} \slashsep \texttt{Stylus} \slashsep \texttt{Ansible} \slashsep \texttt{Docker} \slashsep \texttt{Terraform} \slashsep \texttt{Digital Ocean} \slashsep \texttt{JIRA} \slashsep \texttt{REST API} \slashsep \texttt{OpenAPI}}
+	\entry
+		{2017 - 2018}
+		{Programmer}
+		{WebTMS}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Continuous development of the WebTMS system, both back-end and front-end development. 
+            \item Data migration and database administration.
+            \item Providing first line technical support and training to clients and agents.
+        \end{itemize} 
+        \texttt{T-SQL} \slashsep \texttt{JavaScript} \slashsep \texttt{ASP.Net} \slashsep \texttt{VB.NET} \slashsep \texttt{JQuery} \slashsep \texttt{HTML} \slashsep \texttt{CSS} \slashsep \texttt{Visual Studio} \slashsep \texttt{IIS} \slashsep \texttt{TFS}}
+
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{2019 - present}
+		{PhD Candidate}
+		{University of Bristol}
+		{UKRI Centre for Doctoral Training in Artificial                                Intelligence, Machine Learning \& Advanced Computing \\
+            \textnormal{\textit{Mark Birkinshaw, Natasha Maddox \& Ben Maughan}}
+        % \vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item PhD Project: Using ML image segmentation methods to extract astrophysical objects and their information from next generation radio survey data, in particular the Square Kilometre Array (SKA). Development of a radio image segmentation pipeline for extremely large data sets, ContinUNet, using U-Net as segmentation method.
+            \item Experience in Bayesian statistics, data science techniques, computer vision and image segmentation tasks.
+        \end{itemize} 
+        \texttt{Python} \slashsep \texttt{R} \slashsep \texttt{NumPy} \slashsep \texttt{Pandas} \slashsep \texttt{SciPy} \slashsep \texttt{OpenCV} \slashsep \texttt{Scikit-learn} \slashsep \texttt{TensorFlow} \slashsep \texttt{Keras} \slashsep \texttt{PyTorch} \slashsep \texttt{Docker} \slashsep \texttt{DockerHub} \slashsep \texttt{HPC} \slashsep \texttt{CNNs} \slashsep \texttt{AEs} \slashsep \texttt{VAEs} \slashsep \texttt{Matplotlib} \slashsep \texttt{Seaborn} \slashsep \texttt{Git} \slashsep \texttt{pipenv} \slashsep \texttt{Linux}}
+  %   \entry
+		% {2022}
+		% {Industry Placement - SciML group}
+		% {Rutherford Appleton Laboratory}
+		% {Investigating VAEs and AEs applied to scientific data sets for image segmentation.}
+    \entry
+		{2012 - 2016}
+		{MPhys Physics with Astrophysics 2.1 (hons)}
+		{The Unversity of Manchester}
+		{MPhys project: Design and development of an extensive software system in         Python to automate the operation of a remote control telescope, including         reduction and analysis of collected data.}
+    \entry
+		{2010 - 2012}
+		{A Levels}
+		{The Thomas Hardye School}
+		{A-levels: A*AA in Mathematics, Physics and Chemistry respectively.\\
+            AS-levels: A in Music and B in Further Mathematics. Extended project: A*
+            }
+	\entry
+		{2007 - 2010}
+		{GCSEs}
+		{The Purbeck School}
+		{10 GCSEs, including 5 A*s and 5As with Science, Mathematics and English to       A* grade.}
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+% \vspace{-10 pt}
+\cvsect{Publications}
+\begin{entrylist}
+    \entry
+		{Submitted}
+		{\href{https://hstewart93.github.io/files/continunet_rasti_29_02_2024.pdf}{ContinUNet: Deep Radio Image Segmentation in the SKA Era with U-Net}}
+		{Journal}
+		{\textnormal{\textit{Royal Astronomical Society Techniques \& Instruments         (RASTI)}} \\
+            Hattie Stewart, Mark Birkinshaw, Jason Yeung, Natasha Maddox, Ben Maughan,    Jeyan Thiyagalingam}
+    \entry
+		{Published}
+		{\href{https://doi.org/10.1007/978-3-031-34167-0_28}{Radio Image Segmentation with Autoencoders}}
+		{Conference Proceedings}
+		{\textnormal{\textit{Proceedings of the ML4Astro International Conference}} \\Hattie Stewart, Jason Yeung, Mark Birkinshaw}
+	\entry
+		{Accepted}
+		{\href{https://hstewart93.github.io/files/Proceedings_of_the_International_Astronomical_Union_Deep_Radio_Image_Segmentation.pdf}{Deep Radio Image Segmentation}}
+		{Conference Proceedings}
+		{\textnormal{\textit{IAU Sypmosium 368 Proceedings}} \\Hattie Stewart, Mark Birkinshaw, Jason Yeung}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	CONFERENCES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Conferences}
+\begin{entrylist}
+    \entry
+		{September 2023}
+		{BCRS MIGHTEE Symposium}
+		{Talk}
+		{Radio Image Segmentation in the SKA Era with U-Net}
+    \entry
+		{July 2023}
+		{National Astronomy Meeting}
+		{Talk}
+		{Radio Image Segmentation in the SKA Era with U-Net}
+    \entry
+		{November 2022}
+		{Workshop for Korea-UK AI/ML Research in Fundamental Sciences}
+		{Talk}
+		{Deep Image Segmentation of the Radio Sky}
+  %   \entry
+		% {August 2022}
+		% {IAUS 368: Machine Learning in Astronomy: Possibilities and Pitfalls}
+		% {Poster}
+		% {Radio image segmentation with variational autoencoders: application to SKA       Data Challenge 1 \\
+  %           \textit{presenting author - Mark Birkinshaw}}
+    \entry
+		{July 2022}
+		{National Astronomy Meeting}
+		{Poster}
+		{Radio Image Segmentation with Variational Autoencoders}
+	\entry
+		{June 2022}
+		{Machine Learning for Astrophysics}
+		{Poster and Flash Talk}
+		{Radio Image Segmentation with Autoencoders}
+        \entry
+		{June 2022}
+		{AIMLAC Artificial Intelligence Conference}
+		{Talk}
+		{Radio Image Segmentation with Autoencoders}
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10pt}
+\cvsect{Teaching Experience}
+\begin{entrylist}
+    \entry
+            {2020 - 2022}
+            {Teaching Assistant}
+            {University of Bristol}
+            {Introductory Scientific Computing, Cosmology, Introduction to Computational Physics, Computational Physics}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADMINISTRATIVE EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-15 pt}
+\cvsect{Adminstrative Experience}
+\begin{entrylist}
+    \entry
+            {September 2023}
+            {Local Organising Committee - \textnormal{BCRS MIGHTEE Symposium}}
+            {University of Bristol}
+            {}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PUBLIC ENGAGEMENT AND OUTREACH
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Public Engagement \& Outreach}
+\begin{entrylist}
+    \entry
+		{2020 - 2023}
+		{Co-Founder and Programme Manager}
+		{DataAid}
+		{A student led initiative that provides voluntary data science consultancy to a group of selected charities ({\href{https://cdt-aimlac.org/cdt-data-aid.html}{see website}}). I co-founded the programme and have co-ordinated 3 events (1 virtual and 2 hybrid).}
+    \entry
+            {July 2021}
+            {Written in the Stars}
+            {Aersopace Bristol}
+            {Free Zoom event aimed at Year 9 to Year 11 students, gave a short talk on my research.}
+    \entry
+            {June 2021}
+            {Hareclive in Space - Workshop}
+            {We The Curious}
+            {Workshop at a local primary school (Hareclive Academy), engaging with student's questions and ideas about space.}
+      \entry
+		{2015 - 2017}
+		{Public Events Coordinator}
+		{University of Manchester Physics Outreach (UMPO)}
+		{UMPO is a student run organisation that aims to encourage young people into      science through interactive workshops. As Public Events Coordinator, my main    role was to co-manage the organisation of a Physics outreach show.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS, SCHOLARSHIPS & TRAINING
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+	\cvsect{Certifications, Scholarships \& Training}
+    \vspace{-6pt}
+    
+    \hspace{26mm} \textbf{Introduction to .NET Programming} - Java Consult \\ 
+    
+    \hspace{26mm} \textbf{Undergraduate Science Scholarship} - The Ogden Trust
+
+% \fancyfoot[EF]{hello world}
+%----------------------------------------------------------------------------------------
+
+
+% %----------------------------------------------------------------------------------------
+% %	LANGUAGES
+% %----------------------------------------------------------------------------------------
+% \vspace{-10 pt}
+% 	\cvsect{Languages}
+%     \vspace{-6pt}
+    
+%     \hspace{26mm} \textbf{English} - B2+, \textbf{ Spanish} - native
+
+% %----------------------------------------------------------------------------------------
+\
+% \vfill{}
+% {\footnotesize\noindent Le informazioni contenute nel presente “Curriculum vitae et studiorium” sono rese sotto la personale responsabilita’ del sottoscritto, ai sensi degli articoli 47 e 47 del Decreto del Presidente della Repubblica, 28 dicembre 2000, numero 445, e successive modifiche e integrazioni, consapevole della responsabilita’ penale prevista dall’articolo 76 del medesimo Decreto per le ipotesi di falsita’ in atti e/o dichiarazioni mendaci.}
+\end{document}
